@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Álvaro Cruz — em torre de alto padrão</title>
+  <meta name="description" content="Álvaro Cruz — Pintor de alto padrão. Bramol, Cimento Queimado, Mármore. Orçamento sem compromisso. Contato: WhatsApp" />
+  <style>
+    :root{
+      --accent: #f0c14b;
+      --bg:#0b0b0c;
+      --card:#0f1112;
+      --muted:#bdbdbd;
+      --glass: rgba(255,255,255,0.03);
+      --maxw:1200px;
+      font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+    }
+    *{box-sizing:border-box}
+    body{margin:0;background:linear-gradient(180deg,#050507 0%, #0b0b0c 100%);color:#fff;line-height:1.5}
+    .wrap{max-width:var(--maxw);margin:0 auto;padding:32px}
+
+    /* Header */
+    header{display:flex;align-items:center;justify-content:space-between;gap:16px}
+    .brand{display:flex;align-items:center;gap:12px}
+    .logo{width:64px;height:64px;border-radius:12px;overflow:hidden;background:linear-gradient(135deg,#111 0%,#1c1c1c 100%);display:flex;align-items:center;justify-content:center;border:1px solid rgba(255,255,255,0.04)}
+    .logo h1{font-size:14px;margin:0;color:var(--accent);letter-spacing:0.6px}
+    .title{font-weight:700;font-size:18px}
+    nav{display:flex;gap:12px;align-items:center}
+    .btn-whatsapp{background:linear-gradient(90deg,var(--accent),#ffdb70);color:#111;padding:12px 18px;border-radius:12px;font-weight:700;text-decoration:none;display:inline-flex;align-items:center;gap:10px;box-shadow:0 6px 24px rgba(240,193,75,0.16)}
+    .hero{position:relative;margin-top:22px;border-radius:14px;overflow:hidden}
+    .hero img{width:100%;height:460px;object-fit:cover;display:block;filter:brightness(0.45) saturate(0.95)}
+    .hero .overlay{position:absolute;inset:0;display:flex;flex-direction:column;justify-content:center;padding:48px}
+    .kicker{color:var(--accent);font-weight:700;padding:6px 10px;border-radius:8px;background:rgba(255,255,255,0.03);display:inline-block;margin-bottom:12px}
+    h2{font-size:40px;margin:0 0 10px 0;line-height:1}
+    p.lead{color:var(--muted);max-width:720px;font-size:18px}
+
+    /* Sections */
+    .section{margin-top:36px;background:linear-gradient(180deg, transparent, rgba(255,255,255,0.01));padding:28px;border-radius:12px}
+    .grid{display:grid;grid-template-columns:1fr 320px;gap:20px}
+    .card{background:var(--card);padding:18px;border-radius:12px;border:1px solid rgba(255,255,255,0.03)}
+    .services li{margin-bottom:12px}
+    .services strong{display:block;color:var(--accent);font-size:16px}
+
+    .gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:12px}
+    .gallery img{width:100%;height:140px;object-fit:cover;border-radius:8px}
+
+    footer{margin-top:28px;padding:18px;text-align:center;color:var(--muted);font-size:14px}
+
+    /* WhatsApp fixed CTA */
+    .wa-cta{position:fixed;right:20px;bottom:20px;z-index:80}
+    .wa-cta a{display:flex;align-items:center;gap:10px;padding:14px 16px;border-radius:999px;background:linear-gradient(90deg,#25D366,#128C7E);color:white;text-decoration:none;font-weight:700;box-shadow:0 10px 30px rgba(18,140,126,0.18)}
+
+    @media(max-width:920px){.grid{grid-template-columns:1fr}.hero img{height:360px}.gallery{grid-template-columns:repeat(2,1fr)};h2{font-size:32px}}
+    @media(max-width:520px){.hero img{height:300px;padding-bottom:20px}.logo{width:50px;height:50px}}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="brand">
+        <div class="logo"><h1>Álvaro Cruz</h1></div>
+        <div>
+          <div class="title">Álvaro Cruz <span style="color:var(--muted);font-weight:500">— em torre de alto padrão</span></div>
+          <div style="font-size:13px;color:var(--muted)">Pintura & Acabamento de Luxo • 15 anos de experiência</div>
+        </div>
+      </div>
+      <nav>
+        <a class="btn-whatsapp" href="https://wa.me/5537998760575" target="_blank" rel="noopener noreferrer">📲 WhatsApp — Peça um orçamento</a>
+      </nav>
+    </header>
+
+    <!-- Hero -->
+    <section class="hero">
+      <img src="https://images.unsplash.com/photo-1568605114967-8130f3a36994?auto=format&fit=crop&w=1600&q=80" alt="Casa de alto padrão">
+      <div class="overlay">
+        <div class="kicker">Pintura de Alto Padrão</div>
+        <h2>Álvaro Cruz — Especialista em acabamentos de luxo</h2>
+        <p class="lead">Sou <strong>Álvaro Cruz</strong>, pintor com 15 anos de experiência em projetos residenciais e comerciais de alto padrão. Entrego pontualidade, acabamento impecável e soluções em Bramol, Cimento Queimado e Mármore.</p>
+        <div style="margin-top:18px">
+          <a class="btn-whatsapp" href="https://wa.me/5537998760575" target="_blank" rel="noopener noreferrer">Orçamento sem compromisso — WhatsApp</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Main content -->
+    <main class="section">
+      <div class="grid">
+        <div>
+          <!-- Sobre -->
+          <div class="card">
+            <h3 style="margin-top:0">Sobre <strong style="color:var(--accent)">Álvaro Cruz</strong></h3>
+            <p style="color:var(--muted)">Com 15 anos atuando na pintura residencial e corporativa de alto padrão, <strong>Álvaro Cruz</strong> entrega projetos com responsabilidade de horário, atenção máxima aos detalhes e acabamentos premium. Trabalhamos com técnicas e materiais selecionados para garantir durabilidade, estética e requinte.</p>
+            <ul style="margin-top:14px;color:var(--muted);padding-left:18px">
+              <li>Responsabilidade com prazos e horários</li>
+              <li>Acabamentos minuciosos — detalhes e retoques</li>
+              <li>Atendimento para orçamentos e vistorias</li>
+              <li>Garantia de qualidade nos serviços executados</li>
+            </ul>
+          </div>
+
+          <!-- Serviços -->
+          <div style="margin-top:18px" class="card">
+            <h3 style="margin-top:0">Serviços de alto padrão</h3>
+            <ul class="services" style="list-style:none;padding:0;color:var(--muted)">
+              <li><strong>Bramol</strong><span style="display:block">Efeito texturizado e elegante para ambientes contemporâneos.</span></li>
+              <li><strong>Cimento Queimado</strong><span style="display:block">Acabamento moderno, contínuo e sofisticado, ideal para pisos e paredes.</span></li>
+              <li><strong>Mármore técnico</strong><span style="display:block">Efeito mármore com aplicação de resinas e selantes para alto brilho e resistência.</span></li>
+            </ul>
+          </div>
+
+          <!-- Post fórum -->
+          <div style="margin-top:18px" class="card">
+            <h3 style="margin-top:0">Post — Fórum</h3>
+            <p style="color:var(--muted)"><strong>Álvaro Cruz</strong>: "Sou pintor de casas de alto padrão. Trabalho há 15 anos no ramo, sou detalhista e pontual. Minhas entregas priorizam acabamento, durabilidade e estética — sempre com vistoria e orçamento sem compromisso."</p>
+          </div>
+
+        </div>
+
+        <!-- Right column / contact card -->
+        <aside>
+          <div class="card">
+            <h4 style="margin:0 0 8px 0">Contato rápido</h4>
+            <p style="margin:0 0 12px 0;color:var(--muted)">Clique no botão para enviar uma mensagem direta no WhatsApp. Atendemos orçamentos e vistorias sem compromisso.</p>
+            <a class="btn-whatsapp" href="https://wa.me/5537998760575" target="_blank" rel="noopener noreferrer">📲 Enviar WhatsApp</a>
+            <div style="margin-top:14px;color:var(--muted)">
+              <div><strong>Telefone / WhatsApp:</strong></div>
+              <div style="font-weight:700;font-size:18px">(37) 9 9876-0575</div>
+            </div>
+          </div>
+
+          <div class="card" style="margin-top:14px">
+            <h4 style="margin:0 0 8px 0">Galeria</h4>
+            <div class="gallery">
+              <img src="https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=800&q=60" alt="trabalho 1">
+              <img src="https://images.unsplash.com/photo-1505691723518-36a0f6d3d0a6?auto=format&fit=crop&w=800&q=60" alt="trabalho 2">
+              <img src="https://images.unsplash.com/photo-1524758631624-e2822e304c36?auto=format&fit=crop&w=800&q=60" alt="trabalho 3">
+            </div>
+            <div style="margin-top:10px;color:var(--muted);font-size:13px">(Adicione fotos dos seus trabalhos aqui para aumentar conversões)</div>
+          </div>
+
+        </aside>
+      </div>
+    </main>
+
+    <footer>
+      © <strong>Álvaro Cruz</strong> — Pintura & Acabamento de Alto Padrão • Orçamento sem compromisso • WhatsApp: (37) 9 9876-0575
+    </footer>
+  </div>
+
+  <!-- Fixed WhatsApp CTA -->
+  <div class="wa-cta">
+    <a href="https://wa.me/5537998760575" target="_blank" rel="noopener noreferrer">📲 WhatsApp • Peça seu orçamento</a>
+  </div>
+
+</body>
+</html>
